@@ -1,0 +1,204 @@
+# A Comparative Study of Frameworks and Libraries
+
+## 1. Introduction
+
+In software development, developers often use existing code instead of creating everything from the beginning. Two common ways of reusing existing software are **libraries** and **frameworks**. Although these terms are often used interchangeably, they have different purposes and ways of working.
+
+In simple terms, a **library is a collection of ready-made code that a developer can use when needed**, while a **framework provides a larger structure within which an application is developed**.
+
+The purpose of this research is to understand the difference between a library and a framework using simple examples and to examine how their roles differ in application development.
+
+---
+
+## 2. What is a Library?
+
+A library can be understood as a **ready-made helper**.
+
+Instead of writing every piece of code ourselves, we can use code that has already been written by other developers. A library may contain functions, classes, modules, or other reusable components.
+
+For example, suppose a developer wants to work with data in Python. Instead of writing all the data-processing operations from scratch, they can use **Pandas**, which provides ready-made functionality for working with tables and datasets.
+
+Another simple example is Python's **Turtle** library. A developer can use its existing functions to draw shapes without writing all the drawing logic from the beginning.
+
+### Simple idea:
+
+**Problem → Choose the required library → Use its functions/code → Get the required result**
+
+The important point is that the **developer decides when to use the library**.
+
+---
+
+## 3. What is a Framework?
+
+A framework can be understood as a **ready-made structure or toolkit for developing an application**.
+
+A framework does more than provide individual functions. It usually provides a structure for organizing different parts of an application and may handle common tasks such as routing, request handling, application configuration, or other parts of the application's lifecycle.
+
+For example, **Django** is a Python web framework. Instead of building every part of a web application from the beginning, developers can use the structure and facilities provided by Django.
+
+Similarly, **Angular** provides a structured environment for developing web applications.
+
+### Simple idea:
+
+**Application → Framework structure → Add our own code → Build the complete application**
+
+Therefore, a framework generally gives developers a predefined way of organizing and developing an application.
+
+---
+
+## 4. Library vs Framework
+
+| Aspect       | Library                                      | Framework                                         |
+| ------------ | -------------------------------------------- | ------------------------------------------------- |
+| Basic idea   | Ready-made helper/code                       | Ready-made application structure                  |
+| Main purpose | Solve particular tasks                       | Help build and organize an application            |
+| Control      | Developer generally controls when it is used | Framework generally controls the application flow |
+| Flexibility  | Usually gives more freedom                   | Usually provides more conventions                 |
+| Scope        | Often focused on specific functionality      | Usually covers a broader application structure    |
+| Example      | Pandas, NumPy, Turtle                        | Django, Angular, Spring                           |
+
+---
+
+## 5. The Most Important Difference: Control
+
+One of the most important differences between a library and a framework is **who controls the flow of the application**.
+
+With a library, the developer writes the main application and calls the library whenever its functionality is required.
+
+For example:
+
+**Developer's code → calls library → library performs a task → result returns to developer's code**
+
+With a framework, the framework provides the overall structure and can call the developer's code at appropriate points during the application's execution.
+
+**Framework → provides application flow → calls developer's code → application continues**
+
+This concept is commonly known as **Inversion of Control (IoC)**.
+
+Martin Fowler describes this idea through the well-known principle:
+
+**“Don't call us, we'll call you.”**
+
+This does not mean that every framework works in exactly the same way, but it provides a useful way to understand the fundamental difference.
+
+---
+
+## 6. Real-Life Analogy
+
+The difference can be understood without technical knowledge.
+
+Imagine that you are cooking food.
+
+### Library
+
+A library is like having a **set of ready-made kitchen tools**.
+
+You decide:
+
+* which tool you need,
+* when you need it,
+* and how you want to use it.
+
+The tools help you complete specific tasks, but **you are still controlling the cooking process**.
+
+### Framework
+
+A framework is more like having a **complete cooking setup with a predefined process**.
+
+It gives you:
+
+* a basic structure,
+* predefined steps,
+* tools,
+* and rules for how the process should be organized.
+
+You still add your own ingredients and decisions, but you work within the provided structure.
+
+---
+
+## 7. Examples
+
+### Example 1: Pandas
+
+**Pandas** is a Python library commonly used for data manipulation and analysis.
+
+If a developer needs to read a CSV file, they can use a function provided by Pandas rather than writing the entire CSV-reading functionality themselves.
+
+**Developer → calls Pandas → Pandas performs the requested operation**
+
+---
+
+### Example 2: Django
+
+**Django** is a Python web framework.
+
+A developer can use Django's structure and features to create a web application. Instead of manually designing every part of the web application's architecture, the developer works within the structure provided by Django.
+
+**Django → provides structure and manages parts of the application lifecycle → developer adds application-specific code**
+
+---
+
+### Example 3: Turtle
+
+Python's **Turtle** module provides ready-made functionality for drawing.
+
+If the developer wants to draw a square, they can use Turtle's existing movement functions.
+
+The developer decides when to call those functions.
+
+This demonstrates the basic idea of a library: **existing functionality is used when required.**
+
+---
+
+## 8. Why the Difference Matters
+
+Understanding the difference is important because choosing between a library-oriented approach and a framework-oriented approach can affect how an application is designed.
+
+A library can give developers more freedom to decide how different components should be organized.
+
+A framework can reduce the amount of structural decisions developers have to make by providing conventions and a predefined architecture.
+
+Therefore, the choice is not simply about which one is “better.” The appropriate choice depends on the problem, project requirements, team experience, required flexibility, and expected scale of the application.
+
+---
+
+## 9. Research Observation
+
+Based on the sources reviewed, the distinction between a library and a framework is better understood through **control and structure** rather than simply the amount of code they contain.
+
+A library mainly provides reusable functionality that the developer can call when required.
+
+A framework provides a broader environment and structure for developing an application and can control parts of the application's execution flow.
+
+The boundary is not always completely clear. Some software can provide library-like and framework-like characteristics, and terminology can differ between communities and projects. Therefore, examples should be examined based on how they actually operate rather than only on the label attached to them.
+
+---
+
+## 10. Conclusion
+
+A library and a framework both help developers avoid building everything from scratch, but they do this in different ways.
+
+A **library is mainly a collection of reusable functionality that the developer chooses to use**, whereas a **framework provides a broader structure in which the developer builds an application**.
+
+The simplest way to remember the difference is:
+
+> **Library: “I call it when I need it.”**
+> **Framework: “It provides the structure and may call my code.”**
+
+The concept of **Inversion of Control** provides a useful theoretical basis for understanding this difference.
+
+---
+
+## 11. References
+
+1. **Victor Jonah**, *Simple Difference between a Library and a Framework*, Medium, 2018.
+   [Medium article used as a simple introductory reference](https://medium.com/@victorjonah/simple-difference-between-a-library-and-a-framework-1460aee0bd56?utm_source=chatgpt.com)
+
+2. **MDN Web Docs**, *Introduction to Web APIs / Libraries and Frameworks*.
+   [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_APIs/Introduction?utm_source=chatgpt.com)
+
+3. **Martin Fowler**, *Inversion of Control*.
+   [Martin Fowler — Inversion of Control](https://martinfowler.com/bliki/InversionOfControl.html?utm_source=chatgpt.com)
+
+4. **MDN Web Docs**, *Introduction to Client-side Frameworks*.
+   [MDN — Introduction to Client-side Frameworks](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Frameworks_libraries/Introduction?utm_source=chatgpt.com)
