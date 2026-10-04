@@ -1,0 +1,23 @@
+# What is algorithm?
+Algorithm is nothing just a  sequence of steps use to solve problem
+## for example
+## Making Tea
+so for making a tea what steps i need to follow 
+1st step )boil water
+2) add milk 
+3) add tea leaf
+4) add sugar
+5) boil for some time
+6) serve
+
+## Algorith gives u steps -> process -> result
+*In Programming*
+for finding largest no
+Ex- input =5,7,9,2
+1)take 5 as integer
+2)compare 9 with 5 ->9 is greater 
+3)compare 2 with 9 ->9 remains greater
+4)compare 7 with 9 ->9 remain larger
+
+->Algorithm is not code it can be written in plain english /pseudocode or flowchart before implementing in a programming language 
+
